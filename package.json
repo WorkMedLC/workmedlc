@@ -3,11 +3,12 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "develop": "gridsome develop",
+    "dev": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.6.0"
+    "gridsome": "^0.6.8",
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
     "@gridsome/plugin-sitemap": "^0.2.1",

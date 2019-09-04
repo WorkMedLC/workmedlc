@@ -1,0 +1,9 @@
+{
+  "include": ["./src/**/*", "static/slitslider.js"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}
