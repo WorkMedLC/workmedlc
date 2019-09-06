@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <Gallery ref="gallery" v-bind:slides="slides" v-on:next="next" />
-    <section class="section-1 py-12">
+    <Hero />
+    <section class="section-1 py-16">
       <div class="container">
         <div class="row">
           <div class="col w-full">
@@ -24,7 +24,7 @@
     </section>
     <section class="section2 py-16">
       <div class="container">
-        <div class="row">
+        <div class="row gutter-lg flex">
           <div class="col w-9/12">
             <div class="row gutter-lg flex justify-between ">
               <infoBox class="col w-1/2 "
@@ -32,8 +32,44 @@
               :key="`info-box-${i}`" 
               :info="box"/>
             </div>
-            <div class="col w-3/12"></div>
+          </div>
+          <div class="col w-3/12">
+            <div class="paged bg-grey-200 p-8 rounded-sm border-b border-grey-300 relative">
+              <h3 class="text-20 pl-3 border-l-2 border-dotted border-orange md:text-24">Occupational Medical Care</h3>
+              <p class="md:text-18 font-thin pt-6">Working Together To Get Employees Back To Work.</p>
+              <p lang="es" class="md:text-18 font-thin pb-6">Trabajando juntos para que los empleados volver al trabajo.</p>
+              <p class="md:text-18 font-thin border-t border-b border-grey-300 py-6">2525 S. Telshor, Suite 16-108, Las Cruces, NM 88011 phone:1.575.521.1919 fax:1.575.521.1676</p>
+              <div class="text-center pt-8 pb-2">
+                <g-link class="text-white py-2 px-4 bg-orange hover:bg-orange-400" to="/about"> Se habla espanol</g-link>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-3 py-6">
+      <div class="container">
+        <div class="row">
+          <div class="col w-full">
+            <h2 class="text-20 md:text-26 text-orange">Who We Are</h2>
+            <p>Workmed Occupational Health was founded by Dr. Benito Gallardo in 2008. Dr. Gallardo comes from a military occupational health background. After leaving the military, he worked in various clinics in Las Cruces before deciding to open his own practice in 1999. Dr. Gallardo is a member of the American Board of Independent Medical Examiners (ABIME).</p>
+          </div>
+        </div>
+        <hr class="border-grey-300 my-8 md:my-16">
+         <div class="row">
+          <div class="col w-full">
+            <h2 class="text-20 md:text-26 text-orange">What We Do</h2>
+            <p>At WorkMed Occupational Health, we make it our goal to get you back to work. So whether you require a medical examination for your work-related injury or exposure, or need to complete a physical to start a job, we have you covered. We offer same day appointments and walk-ins. Our services include:</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            
+          </div>
         </div>
       </div>
     </section>
@@ -41,7 +77,7 @@
 </template>
 
 <script>
-import Gallery from '~/components/Gallery'
+import Hero from '~/components/home/Hero'
 import bg1 from '~/assets/images/slider/slider1.jpg'
 import bg2 from '~/assets/images/slider/slider2.jpg'
 import bg3 from '~/assets/images/slider/slide-2.jpg'
@@ -52,34 +88,22 @@ import stock2 from '~/assets/images/stock2.jpg'
 export default {
   head: {
     script: [
-      {src: '/js/modernizr.custom.js'},
-      {src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'},
-      {src: '/js/jquery.ba-cond.min.js'},
-      {src: '/js/jquery.slitslider.js'},
-      // {src: '/js/test.js'}
+     
     ]
   },
   components: {
-    Gallery,
+    Hero,
     InfoBox
   },
   data: () => ({
-    slides: [
-      {title: 'Working Together To Get Employees Back To Work.', img: bg1 },
-      {title: 'The Working Choice For Occupational Medical Care.', img: bg2 },
-      {title: 'Work-Related Care That Really Works.', img: bg3 }
-    ],
+    
     infoBoxes: [
       {title: 'BENEFICIAL TO EMPLOYERS AND EMPLOYEES', img: stock1, lists: ['Decrease lost time from work','Expedite return to work','Increase employee morale']},
       {title: 'CONVENIENT, ACCESSIBLE CARE', img: stock2, lists: ['Flexible hours','Walk-ins welcome','Handicapped-accessible']}
     ]
   }),
   methods: {
-    next() {
-      const image = this.slides.shift()
-      console.log(image)
-      this.$nextTick(() => this.slides.push(image))
-    }
+   
   },
   mounted() {
     
@@ -87,3 +111,24 @@ export default {
   
 }
 </script>
+<style scoped>
+  .paged:before, .paged:after {
+    @apply absolute bg-grey-200 border border-grey-300 rounded-sm;
+    content: '';
+    z-index: -1;
+    height: 4px;
+  }
+  .paged:before {
+    left: 2px;
+    right: 2px;
+    bottom: -6px;
+    border-color: #c4c4c4;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+  .paged:after {
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+</style>

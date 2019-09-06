@@ -1,15 +1,27 @@
 <template>
-  <div>
-    <h1>Title</h1>
-  </div>
+  <Layout>
+    
+    <section class=" bg-orange-400">
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+      <p>thaias diasd fasdf asdfa</p>
+    </section>
+  </Layout>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style>

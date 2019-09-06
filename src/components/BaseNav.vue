@@ -9,7 +9,9 @@
             </div>
             <h2 class="text-24 font-body">WorkMed Inc.</h2>
           </a>
-          <a class="dib menu text-32 md:hidden" @click="openNav" :class="[navOpen ? 'fad fa-times' : 'fad fa-bars']"></a>
+         <span class="md:hidden"> 
+           <a class="dib menu text-32 " @click="openNav" :class="[navOpen ? 'fad fa-times' : 'fad fa-bars']"></a>
+          </span>
         </div>
         <div class="right  md-max:w-full" :style="{height: mobileHeight}">
           
