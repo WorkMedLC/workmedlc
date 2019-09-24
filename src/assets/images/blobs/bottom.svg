@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920px" height="880px" viewBox="0 0 1920 880" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>HelloSign API Wave</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="42.0793037%" y1="-3.10184939%" x2="42.0793027%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D8E2E8" stop-opacity="0.8" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.451030344">
+        <g id="HelloSign-API-Wave" fill="url(#linearGradient-1)">
+            <path d="M1486.10702,175.907641 C1105.4235,61.9359125 733.521825,135.472677 819.994189,277.341198 C906.466552,419.209718 382.345613,350.932646 227.212512,420.991728 C72.0794123,491.050811 59.1971752,545.131511 27.5632741,610.039972 C-4.07062711,674.948434 0.192110886,886.806707 0.192110886,886.806707 C0.192110886,886.806707 1594.28087,890.443442 1739.44222,886.334033 C2102.35864,712.70569 1866.79054,289.87937 1486.10702,175.907641 Z" id="Grey-Wave"></path>
+        </g>
+    </g>
+</svg>

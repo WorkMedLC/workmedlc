@@ -1,7 +1,8 @@
 <template>
-  <Layout>
+  <HomeLayout>
     <Hero />
-    <section class="section-1 py-16">
+    
+    <section class="section-1 py-8 sm:py-16">
       <div class="container">
         <div class="row">
           <div class="col w-full">
@@ -14,77 +15,96 @@
     </section>
     <section class="cta">
       <div class="container">
-        <div class="row">
-          <div class="col w-full flex items-center justify-between border-t-2 border-b-2 border-grey-100 py-3">
+        <div class="row text-center  items-center justify-between border-t-2 border-b-2 border-grey-100 py-6 sm:flex sm:py-3">
+          <div class="col w-full flex-shrink-0 sm:text-left sm:w-7/12">
             <h2 class="text-20 md:text-26">The Working Choice For Occupational Medical Care.</h2>
-            <a href="tel:+1-575-521-1919" class="text-white py-2 px-4 bg-orange hover:bg-orange-400">Call (575)521-1919</a>
+          </div>
+          <div class="col flex-grow-0 mt-4 sm:w-5/12w-full sm:text-right sm:mt-0"> 
+            <a href="tel:+1-575-521-1919" class="text-white inline-block py-2 px-3 md:px-4 bg-first hover:bg-second">Call&nbsp;(575)521-1919</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="section2 py-16">
+    <section class="section2 py-12 sm:py-16">
       <div class="container">
-        <div class="row gutter-lg flex">
-          <div class="col w-9/12">
-            <div class="row gutter-lg flex justify-between ">
-              <infoBox class="col w-1/2 "
+        <div class="row gutter-lg flex flex-wrap">
+          <div class="col w-full lg:w-9/12">
+            <div class="row gutter-lg flex justify-between flex-wrap">
+              <infoBox class="col w-full md:w-1/2 md-max:pb-12"
               v-for="(box,i) in infoBoxes" 
               :key="`info-box-${i}`" 
               :info="box"/>
             </div>
           </div>
-          <div class="col w-3/12">
+          <div class="col w-full lg:w-3/12  pt-0 md:pt-12 lg:pt-0">
             <div class="paged bg-grey-200 p-8 rounded-sm border-b border-grey-300 relative">
-              <h3 class="text-20 pl-3 border-l-2 border-dotted border-orange md:text-24">Occupational Medical Care</h3>
+              <h3 class="text-20 pl-3 border-l-2 border-dotted border-first md:text-24">Occupational Medical Care</h3>
               <p class="md:text-18 font-thin pt-6">Working Together To Get Employees Back To Work.</p>
               <p lang="es" class="md:text-18 font-thin pb-6">Trabajando juntos para que los empleados volver al trabajo.</p>
               <p class="md:text-18 font-thin border-t border-b border-grey-300 py-6">2525 S. Telshor, Suite 16-108, Las Cruces, NM 88011 phone:1.575.521.1919 fax:1.575.521.1676</p>
               <div class="text-center pt-8 pb-2">
-                <g-link class="text-white py-2 px-4 bg-orange hover:bg-orange-400" to="/about"> Se habla espanol</g-link>
+                <g-link class="text-white py-2 px-4 bg-first hover:bg-second" to="/about"> Se habla espanol</g-link>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-3 py-6">
+    <section class="section-3 pb-6">
       <div class="container">
         <div class="row">
           <div class="col w-full">
-            <h2 class="text-20 md:text-26 text-orange">Who We Are</h2>
+            <h2 class="text-20 md:text-26 text-first pb-1">Who We Are</h2>
             <p>Workmed Occupational Health was founded by Dr. Benito Gallardo in 2008. Dr. Gallardo comes from a military occupational health background. After leaving the military, he worked in various clinics in Las Cruces before deciding to open his own practice in 1999. Dr. Gallardo is a member of the American Board of Independent Medical Examiners (ABIME).</p>
           </div>
         </div>
-        <hr class="border-grey-300 my-8 md:my-16">
+        <hr class="border-grey-300 my-8 md:my-12">
          <div class="row">
           <div class="col w-full">
-            <h2 class="text-20 md:text-26 text-orange">What We Do</h2>
+            <h2 class="text-20 md:text-26 text-first pb-1">What We Do</h2>
             <p>At WorkMed Occupational Health, we make it our goal to get you back to work. So whether you require a medical examination for your work-related injury or exposure, or need to complete a physical to start a job, we have you covered. We offer same day appointments and walk-ins. Our services include:</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-4">
+    <section class="section-4 pb-12 sm:pb-16">
       <div class="container">
+        <Tabs class="pt-4" />
         <div class="row">
-          <div class="col">
-            
+          <div class="col text-center">
+           <p class="pt-8">We can also provide <i class="fad fa-plus text-second"></i> hearing and vision tests, X-rays, <i class="fad fa-plus text-second"></i> spirometry tests and even <i class="fad fa-plus text-second"></i> respirator fittings to make sure your employees are in compliance.</p>
           </div>
         </div>
       </div>
     </section>
-  </Layout>
+    <section class="section-5 bg-first  py-10">
+
+      <div class="container">
+        <div class="row">
+          <div class="col max-w-3xl mx-auto text-center">
+            <h2 class="text-white text-20 md:text-26">If you have any questions or would like to set an appointment, please feel free to call us at <a href="tel:+1-575-521-1919" class="border-b border-dotted">1.575.521.1919</a>. We look forward to helping&npsp;you.</h2>
+            <a href="tel:+1-575-521-1919" class="text-white border border-white py-1 px-8 mt-6 inline-block hover:opacity-75"><i class="fad fa-phone-alt pr-2"></i> Call Us</a>.
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="" class="inline-block p-8 bg-first">test</a>
+    <a href="" class="inline-block p-8 bg-second">test</a>
+    <a href="" class="inline-block p-8 bg-third">test</a>
+    <a href="" class="inline-block p-8 bg-fourth">test</a>
+  </HomeLayout>
 </template>
 
 <script>
-import Hero from '~/components/home/Hero'
 import bg1 from '~/assets/images/slider/slider1.jpg'
 import bg2 from '~/assets/images/slider/slider2.jpg'
 import bg3 from '~/assets/images/slider/slide-2.jpg'
-import InfoBox from '~/components/home/InfoBox'
 import stock1 from '~/assets/images/stock1.jpg'
 import stock2 from '~/assets/images/stock2.jpg'
-
+import HomeLayout from '~/layouts/Home'
+import InfoBox from '~/components/home/InfoBox'
+import Hero from '~/components/home/newHero'
+import Tabs from '~/components/home/Tabs'
 export default {
   head: {
     script: [
@@ -92,8 +112,10 @@ export default {
     ]
   },
   components: {
+    HomeLayout,
     Hero,
-    InfoBox
+    InfoBox,
+    Tabs
   },
   data: () => ({
     
@@ -111,7 +133,10 @@ export default {
   
 }
 </script>
-<style scoped>
+<style lang="scss">
+  body {
+    background-image: linear-gradient(-90deg,white 60%, #f5f8fc 40%);
+  }
   .paged:before, .paged:after {
     @apply absolute bg-grey-200 border border-grey-300 rounded-sm;
     content: '';

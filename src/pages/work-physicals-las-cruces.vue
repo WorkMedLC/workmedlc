@@ -1,7 +1,7 @@
 <template>
   <Layout>
     
-    <section class=" bg-orange-400">
+    <section class=" bg-second">
       <p>thaias diasd fasdf asdfa</p>
       <p>thaias diasd fasdf asdfa</p>
       <p>thaias diasd fasdf asdfa</p>

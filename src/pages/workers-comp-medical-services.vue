@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Slider from  'canvas-slider'
+
 export default {
 data: () => ({})
 }

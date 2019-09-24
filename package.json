@@ -7,12 +7,20 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "canvas-slider": "^1.0.17",
     "gridsome": "^0.6.8",
-    "jquery": "^3.4.1"
+    "lodash.debounce": "^4.0.8",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
     "@gridsome/plugin-sitemap": "^0.2.1",
-    "gridsome-plugin-tailwindcss": "^2.2.21"
+    "fibers": "^4.0.1",
+    "node-sass": "^4.12.0",
+    "sass": "^1.23.0-module.beta.1",
+    "sass-loader": "^8.0.0",
+    "tailwindcss": "^1.1.2",
+    "vue-masonry-css": "^1.0.3",
+    "vue-particles": "^1.0.9"
   }
 }
